@@ -10,3 +10,4 @@ C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC\obj\Debug\RentC.ex
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC\obj\Debug\RentC.pdb
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC\obj\Debug\RentC.csprojAssemblyReference.cache
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC\obj\Debug\RentC.ListRentsScreen.resources
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC\obj\Debug\RentC.RegisterNewCartRentScreen.resources
