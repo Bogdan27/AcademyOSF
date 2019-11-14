@@ -17,17 +17,13 @@ namespace RentC
             InitializeComponent();
         }
 
-        private void WelcomeScreen_Load(object sender, EventArgs e)
-        {
-
-        }
-
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if (keyData == Keys.Escape)
             {
                 this.Close();
-                return true;
+                Application.Exit();
+
             }
             if (keyData == Keys.Enter)
             {

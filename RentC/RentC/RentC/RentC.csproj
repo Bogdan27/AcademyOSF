@@ -46,11 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ListAvailableCarsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListAvailableCarsList.Designer.cs">
+      <DependentUpon>ListAvailableCarsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListCustomersScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListCustomersScreen.Designer.cs">
+      <DependentUpon>ListCustomersScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListRentsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListRentsScreen.Designer.cs">
+      <DependentUpon>ListRentsScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuScreen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuScreen.Designer.cs">
       <DependentUpon>MenuScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterNewCartRentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterNewCartRentScreen.Designer.cs">
+      <DependentUpon>RegisterNewCartRentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterNewCustomerScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterNewCustomerScreen.Designer.cs">
+      <DependentUpon>RegisterNewCustomerScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCartRentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCartRentScreen.Designer.cs">
+      <DependentUpon>UpdateCartRentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCustomerScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCustomerScreen.Designer.cs">
+      <DependentUpon>UpdateCustomerScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="WelcomeScreen.cs">
       <SubType>Form</SubType>
@@ -60,6 +102,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ListRentsScreen.resx">
+      <DependentUpon>ListRentsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuScreen.resx">
+      <DependentUpon>MenuScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

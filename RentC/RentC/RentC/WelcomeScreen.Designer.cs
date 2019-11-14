@@ -68,7 +68,6 @@
             this.Controls.Add(this.textBoxWelcome);
             this.Name = "WelcomeScreen";
             this.Text = "WelcomeScreen";
-            this.Load += new System.EventHandler(this.WelcomeScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
