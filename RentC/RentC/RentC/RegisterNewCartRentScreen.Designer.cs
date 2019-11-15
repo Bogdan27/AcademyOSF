@@ -114,14 +114,14 @@
             // 
             // dateTimePickerStartDate
             // 
-            this.dateTimePickerStartDate.Location = new System.Drawing.Point(210, 230);
+            this.dateTimePickerStartDate.Location = new System.Drawing.Point(210, 173);
             this.dateTimePickerStartDate.Name = "dateTimePickerStartDate";
             this.dateTimePickerStartDate.Size = new System.Drawing.Size(200, 22);
             this.dateTimePickerStartDate.TabIndex = 10;
             // 
             // dateTimePickerEndDate
             // 
-            this.dateTimePickerEndDate.Location = new System.Drawing.Point(210, 170);
+            this.dateTimePickerEndDate.Location = new System.Drawing.Point(210, 233);
             this.dateTimePickerEndDate.Name = "dateTimePickerEndDate";
             this.dateTimePickerEndDate.Size = new System.Drawing.Size(200, 22);
             this.dateTimePickerEndDate.TabIndex = 11;

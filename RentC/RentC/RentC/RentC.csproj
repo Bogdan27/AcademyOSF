@@ -95,6 +95,7 @@
     <Compile Include="UpdateCustomerScreen.Designer.cs">
       <DependentUpon>UpdateCustomerScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="ValidateData.cs" />
     <Compile Include="WelcomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>

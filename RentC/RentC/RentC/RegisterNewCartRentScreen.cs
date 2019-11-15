@@ -15,7 +15,7 @@ namespace RentC
     public partial class RegisterNewCartRentScreen : Form
     {
         String connectionString = ConfigurationManager.ConnectionStrings["rentConnectionString"].ConnectionString;
-
+        ValidateData validateData = new ValidateData();
 
         public RegisterNewCartRentScreen()
         {
@@ -24,9 +24,11 @@ namespace RentC
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
-            addReservation();
-          //  string s=
-               
+            if (validateData.validateAllData(connectionString, textBoxCity.Text, dateTimePickerStartDate, dateTimePickerEndDate, textBoxClientID.Text, textBoxCartPlate.Text))
+            {
+                addReservation();
+            }
+
         }
 
         private void RegisterNewCartRentScreen_Load(object sender, EventArgs e)
@@ -39,54 +41,33 @@ namespace RentC
                 try
                 {
 
-                    using (SqlConnection openCon = new SqlConnection(connectionString))
+                    using (SqlConnection connection = new SqlConnection(connectionString))
                     {
                         string saveStaff = "INSERT into Reservations (carId,costumerID,ReservStatsID,startDate,endDate,location) VALUES (@carId,@costumerId,@ReservStatsID,@startDate,@endDate,@location)";
 
-                        using (SqlCommand querySaveStaff = new SqlCommand(saveStaff))
+                        using (SqlCommand queryRegisterNewCartRent = new SqlCommand(saveStaff))
                         {
-                            querySaveStaff.Connection = openCon;
-                            querySaveStaff.Parameters.Add("@carId", SqlDbType.Int).Value = Int32.Parse(textBoxCartPlate.Text);
-                            querySaveStaff.Parameters.Add("@costumerId", SqlDbType.Int).Value = Int32.Parse(textBoxClientID.Text);
-                            querySaveStaff.Parameters.Add("@ReservStatsID", SqlDbType.Int).Value = 1;
-                            querySaveStaff.Parameters.Add("@startDate", SqlDbType.Date, 30).Value = dateTimePickerStartDate.Value.ToString("dd/MMM/yyyy");
-                            querySaveStaff.Parameters.Add("@endDate", SqlDbType.Date, 30).Value = dateTimePickerEndDate.Value.ToString("dd/MMM/yyyy");
-                            querySaveStaff.Parameters.Add("@location", SqlDbType.VarChar, 50).Value = textBoxCity.Text;
+                            queryRegisterNewCartRent.Connection = connection;
+                            queryRegisterNewCartRent.Parameters.Add("@carId", SqlDbType.VarChar, 10).Value = textBoxCartPlate.Text;
+                            queryRegisterNewCartRent.Parameters.Add("@costumerId", SqlDbType.Int).Value = Int32.Parse(textBoxClientID.Text);
+                            queryRegisterNewCartRent.Parameters.Add("@ReservStatsID", SqlDbType.Int).Value = 1;
+                            queryRegisterNewCartRent.Parameters.Add("@startDate", SqlDbType.Date, 30).Value = dateTimePickerStartDate.Value.ToString("dd/MMM/yyyy");
+                            queryRegisterNewCartRent.Parameters.Add("@endDate", SqlDbType.Date, 30).Value = dateTimePickerEndDate.Value.ToString("dd/MMM/yyyy");
+                            queryRegisterNewCartRent.Parameters.Add("@location", SqlDbType.VarChar, 50).Value = textBoxCity.Text;
 
+                            connection.Open();
+                            queryRegisterNewCartRent.ExecuteNonQuery();
 
-
-                            openCon.Open();
-
-                            int result = querySaveStaff.ExecuteNonQuery();
-
-                            if (result > 0)
-                            {
-                                MessageBox.Show("Adaugat");
-
-                            }
-                            else
-                            {
-                                MessageBox.Show("Eroare");
-                            }
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Exceptie" + ex.Message);
+                    MessageBox.Show("Exception" + ex.Message);
                 }
             
         }
 
-        private bool ValidateDate()
-        {
-            bool ok = true;
-            //if ()
-            //{
-
-            //}
-            return ok;
-        }
-
     }
+    
 }
