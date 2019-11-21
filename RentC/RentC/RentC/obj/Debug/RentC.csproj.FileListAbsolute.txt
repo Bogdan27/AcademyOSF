@@ -11,3 +11,7 @@ C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC\obj\Debug\RentC.pd
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC\obj\Debug\RentC.csprojAssemblyReference.cache
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC\obj\Debug\RentC.ListRentsScreen.resources
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC\obj\Debug\RentC.RegisterNewCartRentScreen.resources
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC\obj\Debug\RentC.RegisterNewCustomerScreen.resources
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC\obj\Debug\RentC.UpdateCartRentScreen.resources
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC\obj\Debug\RentC.ListCustomersScreen.resources
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC\obj\Debug\RentC.UpdateCustomerScreen.resources

@@ -83,6 +83,7 @@
     <Compile Include="RegisterNewCustomerScreen.Designer.cs">
       <DependentUpon>RegisterNewCustomerScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShowData.cs" />
     <Compile Include="UpdateCartRentScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,7 +96,8 @@
     <Compile Include="UpdateCustomerScreen.Designer.cs">
       <DependentUpon>UpdateCustomerScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ValidateData.cs" />
+    <Compile Include="ValidateNewCustomerData.cs" />
+    <Compile Include="ValidateReservationData.cs" />
     <Compile Include="WelcomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +106,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ListCustomersScreen.resx">
+      <DependentUpon>ListCustomersScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListRentsScreen.resx">
       <DependentUpon>ListRentsScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +126,15 @@
     </Compile>
     <EmbeddedResource Include="RegisterNewCartRentScreen.resx">
       <DependentUpon>RegisterNewCartRentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterNewCustomerScreen.resx">
+      <DependentUpon>RegisterNewCustomerScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCartRentScreen.resx">
+      <DependentUpon>UpdateCartRentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCustomerScreen.resx">
+      <DependentUpon>UpdateCustomerScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WelcomeScreen.resx">
       <DependentUpon>WelcomeScreen.cs</DependentUpon>

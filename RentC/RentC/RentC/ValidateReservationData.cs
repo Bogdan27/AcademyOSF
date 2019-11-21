@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace RentC
 {
-    class ValidateData
+    class ValidateReservationData
     {
         public string NotValidMessage { get; set; } = "";
 
@@ -18,8 +18,7 @@ namespace RentC
         {
             if (dateTimePickerStartDate.Value > dateTimePickerEndDate.Value)
             {
-                //MessageBox.Show("End Date must be after Start Date");
-                NotValidMessage += "End Date must be after Start Date";
+                NotValidMessage += "End Date must be after Start Date\n";
                 IsValid = false;
             }
             else
@@ -75,18 +74,18 @@ namespace RentC
             return IsValid;
         }
 
-        private bool validateCarId(SqlConnection connection, string carId)
+        private bool validateCarPlate(SqlConnection connection, string carPlate)
         {
 
-            SqlCommand check_User_Name = new SqlCommand("SELECT COUNT(*) FROM Cars WHERE (carId = @carId)", connection);
-            check_User_Name.Parameters.AddWithValue("@carId", carId);
-            int UserExist = (int)check_User_Name.ExecuteScalar();
+            SqlCommand check_Plate = new SqlCommand("SELECT COUNT(*) FROM Cars WHERE (Plate = @Plate)", connection);
+            check_Plate.Parameters.AddWithValue("@Plate", carPlate);
+            int UserExist = (int)check_Plate.ExecuteScalar();
             if (UserExist > 0)
             {
 
-                check_User_Name = new SqlCommand("SELECT COUNT(*) FROM Reservations WHERE (carId = @carId)", connection);
-                check_User_Name.Parameters.AddWithValue("@carId", carId);
-                UserExist = (int)check_User_Name.ExecuteScalar();
+                check_Plate = new SqlCommand("SELECT COUNT(*) FROM Reservations WHERE (Plate = @Plate)", connection);
+                check_Plate.Parameters.AddWithValue("@Plate", carPlate);
+                UserExist = (int)check_Plate.ExecuteScalar();
                 if (UserExist > 0)
                 {
                     NotValidMessage += "Car is not avilable\n";
@@ -107,7 +106,7 @@ namespace RentC
         }
 
 
-        public bool validateAllData(string connectionString, string city, DateTimePicker dateTimePickerStartDate, DateTimePicker dateTimePickerEndDate,string clientId, string carId)
+        public bool validateAllData(string connectionString,string message, string city, DateTimePicker dateTimePickerStartDate, DateTimePicker dateTimePickerEndDate,string clientId, string carId)
         {
 
             SqlConnection connection = new SqlConnection();
@@ -116,11 +115,11 @@ namespace RentC
                 using (connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    IsValid = validateCarId(connection, carId) & validateCliendId(connection, clientId) & validateDate(dateTimePickerStartDate, dateTimePickerEndDate) & validateLocation(connection, city);
+                    IsValid = validateCarPlate(connection, carId) & validateCliendId(connection, clientId) & validateDate(dateTimePickerStartDate, dateTimePickerEndDate) & validateLocation(connection, city);
 
                     if (IsValid)
                     {
-                        MessageBox.Show("Added");
+                        MessageBox.Show(message);
                     }
                     else
                     {
