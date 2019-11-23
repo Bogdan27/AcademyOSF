@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentC", "RentC\RentC.csproj", "{55B8B69E-CA3E-4A85-86A0-2B5E696C8372}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F941860A-B4E4-41D8-8B98-4B3D17E7E47E} = {F941860A-B4E4-41D8-8B98-4B3D17E7E47E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceApp", "WcfServiceApp\WcfServiceApp.csproj", "{F941860A-B4E4-41D8-8B98-4B3D17E7E47E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{55B8B69E-CA3E-4A85-86A0-2B5E696C8372}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55B8B69E-CA3E-4A85-86A0-2B5E696C8372}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55B8B69E-CA3E-4A85-86A0-2B5E696C8372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F941860A-B4E4-41D8-8B98-4B3D17E7E47E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F941860A-B4E4-41D8-8B98-4B3D17E7E47E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F941860A-B4E4-41D8-8B98-4B3D17E7E47E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F941860A-B4E4-41D8-8B98-4B3D17E7E47E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

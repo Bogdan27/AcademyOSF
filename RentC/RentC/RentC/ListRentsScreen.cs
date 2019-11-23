@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,7 +21,8 @@ namespace RentC
 
         private void ListRentsScreen_Load(object sender, EventArgs e)
         {
-
+           ShowData.showData("Reservations", dataGridViewRents);
         }
+
     }
 }

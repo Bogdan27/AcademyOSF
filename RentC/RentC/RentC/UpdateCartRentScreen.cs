@@ -37,8 +37,6 @@ namespace RentC
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-
-
                     string updateCustomer = "UPDATE Reservations set Plate=@Plate, CostumerId=@CostumerId, StartDate=@StartDate, EndDate=@EndDate, Location=@Location" +
                         " where ReservationID=@ReservationID";
                     using (SqlCommand queryUpdateCustomer = new SqlCommand(updateCustomer))
@@ -60,41 +58,7 @@ namespace RentC
             {
                 MessageBox.Show("Exception" + ex.Message);
             }
-
-
-
-
-
-
-
-
-
-            try
-            {
-                SqlConnection conn = new SqlConnection(connectionString);
-
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandType = CommandType.Text;
-                String sqlCommand = "UPDATE Reservations set Plate ='";
-                sqlCommand += textBoxCartPlate.Text + "'";
-                sqlCommand += ", CostumerId ='" + Int32.Parse(textBoxClientID.Text) + "'";
-                sqlCommand += ", StartDate ='" + dateTimePickerStartDate.Value.ToString("dd/MMM/yyyy") + "'";
-                sqlCommand += ", EndDate = '" + dateTimePickerEndDate.Value.ToString("dd/MMM/yyyy") + "'";
-                sqlCommand += ", Location ='" + textBoxCity.Text + "'";
-                sqlCommand += " where  CostumerID=" + textBoxReservationToUpdate.Text ;
-
-                cmd.CommandText = sqlCommand;
-                cmd.ExecuteNonQuery();
-
-
-                conn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Exception" + ex.Message);
-            }
+            
         }
     }
 }

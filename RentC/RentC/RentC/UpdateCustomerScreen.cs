@@ -37,8 +37,6 @@ namespace RentC
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-
-
                     string updateCustomer ="UPDATE Customers set Name=@Name, BirthDate=@BirthDate, Location=@Location" +
                         " where CostumerID=@CostumerIdToCheck";
                     using (SqlCommand queryUpdateCustomer = new SqlCommand(updateCustomer))

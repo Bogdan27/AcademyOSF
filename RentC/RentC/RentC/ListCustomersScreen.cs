@@ -16,5 +16,10 @@ namespace RentC
         {
             InitializeComponent();
         }
+
+        private void ListCustomersScreen_Load(object sender, EventArgs e)
+        {
+            ShowData.showData("Customers", dataGridViewCustomers);
+        }
     }
 }
