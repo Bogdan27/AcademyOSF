@@ -4,13 +4,12 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RentC.Core.Models;
 
 namespace RentC.Core
 {
-    public class Customer
+    public class Customer : BaseEntity
     {
-        [Required]
-        public string Id { get; set; }
 
         [Required]
         [StringLength(50)]
@@ -22,11 +21,6 @@ namespace RentC.Core
         [Required]
         [StringLength(50)]
         public string Location { get; set; }
-
-        public Customer()
-        {
-            this.Id = Guid.NewGuid().ToString();
-        }
 
     }
 

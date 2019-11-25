@@ -5,10 +5,12 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RentC.Core.Models;
+
 
 namespace RentC.Core
 {
-    public class Reservation
+    public class Reservation : BaseEntity
     {
         [StringLength(10)]
         [DisplayName("Cart Plate")]

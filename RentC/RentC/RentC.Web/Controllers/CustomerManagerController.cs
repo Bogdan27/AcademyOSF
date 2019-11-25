@@ -5,15 +5,18 @@ using System.Web;
 using System.Web.Mvc;
 using RentC.Core;
 using RentC.DataAccess.InMemory;
+using RentC.Core.Contracts;
+
 
 namespace RentC.Web.Controllers
 {
     public class CustomerManagerController : Controller
     {
-        CustomerRepository context;
-        public CustomerManagerController()
+        IRepository<Customer> context;
+
+        public CustomerManagerController(IRepository<Customer> customerContext)
         {
-            context = new CustomerRepository();
+            context = customerContext;
         }
         // GET: CustomerManager
         public ActionResult Index()

@@ -191,3 +191,12 @@ C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\RentC.Data
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\RentC.Core.pdb
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\RentC.DataAccess.InMemory.pdb
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\RentC.DataAccess.SQL.pdb
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\Unity.Abstractions.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\Unity.Container.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\Unity.Mvc.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\WebActivatorEx.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\Unity.Abstractions.pdb
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\Unity.Container.pdb
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\Unity.Mvc.pdb
