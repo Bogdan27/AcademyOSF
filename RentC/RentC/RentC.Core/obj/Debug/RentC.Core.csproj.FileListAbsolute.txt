@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Core\bin\Debug\RentC.Core.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Core\bin\Debug\RentC.Core.pdb
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Core\obj\Debug\RentC.Core.csprojAssemblyReference.cache
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Core\obj\Debug\RentC.Core.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Core\obj\Debug\RentC.Core.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Core\obj\Debug\RentC.Core.pdb

@@ -1,0 +1,9 @@
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.InMemory\obj\Debug\RentC.DataAccess.InMemory.csprojAssemblyReference.cache
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.InMemory\obj\Debug\RentC.DataAccess.InMemory.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.InMemory\bin\Debug\RentC.DataAccess.InMemory.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.InMemory\bin\Debug\RentC.DataAccess.InMemory.pdb
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.InMemory\bin\Debug\RentC.Core.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.InMemory\bin\Debug\RentC.Core.pdb
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.InMemory\obj\Debug\RentC.DataAccess.InMemory.csproj.CopyComplete
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.InMemory\obj\Debug\RentC.DataAccess.InMemory.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.InMemory\obj\Debug\RentC.DataAccess.InMemory.pdb

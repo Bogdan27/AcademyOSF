@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\bin\Debug\RentC.DataAccess.SQL.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\bin\Debug\RentC.DataAccess.SQL.pdb
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\obj\Debug\RentC.DataAccess.SQL.csprojAssemblyReference.cache
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\obj\Debug\RentC.DataAccess.SQL.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\obj\Debug\RentC.DataAccess.SQL.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\obj\Debug\RentC.DataAccess.SQL.pdb
