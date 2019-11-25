@@ -133,7 +133,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CustomerManagerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReservationManagerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -208,10 +210,15 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\CustomerManager\Index.cshtml" />
+    <Content Include="Views\CustomerManager\Create.cshtml" />
+    <Content Include="Views\CustomerManager\Edit.cshtml" />
+    <Content Include="Views\CustomerManager\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\ReservationManager\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
@@ -225,6 +232,20 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RentC.Core\RentC.Core.csproj">
+      <Project>{502b996d-711c-4325-bf91-5d1578240aed}</Project>
+      <Name>RentC.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RentC.DataAccess.InMemory\RentC.DataAccess.InMemory.csproj">
+      <Project>{a926c9b1-2272-44e8-98a8-9651c9425286}</Project>
+      <Name>RentC.DataAccess.InMemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RentC.DataAccess.SQL\RentC.DataAccess.SQL.csproj">
+      <Project>{8eb3fae0-7fc9-48b7-b494-795c7fb3e419}</Project>
+      <Name>RentC.DataAccess.SQL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -33,7 +33,7 @@ namespace RentC.DataAccess.InMemory
 
         public void Update(Customer customer)
         {
-            Customer customerToUpdate = customers.Find(c => c.Name == customer.Name);
+            Customer customerToUpdate = customers.Find(c => c.Id==customer.Id);
 
             if (customerToUpdate != null)
             {
@@ -46,9 +46,9 @@ namespace RentC.DataAccess.InMemory
         }
 
 
-        public Customer Find(string Name)
+        public Customer Find(string Id)
         {
-            Customer customer = customers.Find(c => c.Name == Name);
+            Customer customer = customers.Find(c => c.Id == Id);
 
             if (customer != null)
             {
@@ -66,9 +66,9 @@ namespace RentC.DataAccess.InMemory
             return customers.AsQueryable();
         }
 
-        public void Delete(string Name)
+        public void Delete(string Id)
         {
-            Customer customerToDelete = customers.Find(c => c.Name == Name);
+            Customer customerToDelete = customers.Find(c => c.Id==Id);
 
             if (customerToDelete != null)
             {

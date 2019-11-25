@@ -10,6 +10,9 @@ namespace RentC.Core
     public class Customer
     {
         [Required]
+        public string Id { get; set; }
+
+        [Required]
         [StringLength(50)]
         public string Name { get; set; }
 
@@ -20,5 +23,12 @@ namespace RentC.Core
         [StringLength(50)]
         public string Location { get; set; }
 
+        public Customer()
+        {
+            this.Id = Guid.NewGuid().ToString();
+        }
+
     }
+
+
 }
