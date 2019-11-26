@@ -3,26 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using RentC.Core;
+//using RentC.Core;
 using RentC.DataAccess.InMemory;
 using RentC.Core.Contracts;
-
+using RentC.DataAccess.SQL;
 
 namespace RentC.Web.Controllers
 {
     public class CustomerManagerController : Controller
     {
-        IRepository<Customer> context;
+        //  IRepository<Customer> context;
+        Cart_RentEntities context =new Cart_RentEntities();
 
-        public CustomerManagerController(IRepository<Customer> customerContext)
-        {
-            context = customerContext;
-        }
+        //public CustomerManagerController(Cart_RentEntities customerContext)
+        //{
+        //    context = customerContext;
+        //}
         // GET: CustomerManager
         public ActionResult Index()
         {
-            List<Customer> customers = context.Collection().ToList();
-            return View(customers);
+           // List<Customer> customers = context.Customers.ToList();
+            return View(context.Customers.ToList());
         }
 
         public ActionResult Create()
@@ -40,8 +41,10 @@ namespace RentC.Web.Controllers
             }
             else
             {
-                context.Insert(customer);
-                context.Commit();
+
+                //context.(customer);
+                context.Customers.Add(customer);
+                context.SaveChanges();
 
                 return RedirectToAction("Index");
             }
@@ -49,7 +52,7 @@ namespace RentC.Web.Controllers
 
         public ActionResult Edit(string Id)
         {
-            Customer customer = context.Find(Id);
+            Customer customer = context.Customers.Find(Id);
             if (customer == null)
             {
                 return HttpNotFound();
@@ -64,8 +67,8 @@ namespace RentC.Web.Controllers
         [HttpPost]
         public ActionResult Edit(Customer customer, string Id)
         {
-            Customer customerToEdit = context.Find(Id);
-            if (customerToEdit == null)
+            //Customer customerToEdit = context.Customers.Find(Id);
+            if (context.Customers.Find(Id) == null)
             {
                 return HttpNotFound();
             }
@@ -76,11 +79,11 @@ namespace RentC.Web.Controllers
                     return View(customer);
                 }
 
-                customerToEdit.Name = customer.Name;
-                customerToEdit.BirthDate = customer.BirthDate;
-                customerToEdit.Location = customer.Location;
+                context.Customers.Find(Id).Name = customer.Name;
+                context.Customers.Find(Id).BirthDate = customer.BirthDate;
+                context.Customers.Find(Id).Location = customer.Location;
 
-                context.Commit();
+                context.SaveChanges();
 
                 return RedirectToAction("Index");
             }
@@ -88,7 +91,7 @@ namespace RentC.Web.Controllers
 
         public ActionResult Delete(string Id)
         {
-            Customer customerToDelete = context.Find(Id);
+            Customer customerToDelete = context.Customers.Find(Id);
             if (customerToDelete == null)
             {
                 return HttpNotFound();
@@ -104,15 +107,15 @@ namespace RentC.Web.Controllers
         [ActionName("Delete")]
         public ActionResult ConfirmDelete(string Id)
         {
-            Customer customerToDelete = context.Find(Id);
+            Customer customerToDelete = context.Customers.Find(Id);
             if (customerToDelete == null)
             {
                 return HttpNotFound();
             }
             else
             {
-                context.Delete(Id);
-                context.Commit();
+                context.Customers.Remove(customerToDelete);
+                context.SaveChanges();
                 return RedirectToAction("Index");
             }
         }

@@ -4,3 +4,11 @@ C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\obj
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\obj\Debug\RentC.DataAccess.SQL.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\obj\Debug\RentC.DataAccess.SQL.dll
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\obj\Debug\RentC.DataAccess.SQL.pdb
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\bin\Debug\RentC.DataAccess.SQL.dll.config
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\obj\Debug\RentC.DataAccess.SQL.csproj.CopyComplete
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\bin\Debug\RentC.Core.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\bin\Debug\RentC.Core.pdb

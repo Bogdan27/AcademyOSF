@@ -1,6 +1,7 @@
 using RentC.Core;
 using RentC.Core.Contracts;
 using RentC.DataAccess.InMemory;
+using RentC.DataAccess.SQL;
 using System;
 
 using Unity;
@@ -46,7 +47,9 @@ namespace RentC.Web
             // TODO: Register your type's mappings here.
             // container.RegisterType<IProductRepository, ProductRepository>();
 
-            container.RegisterType<IRepository<Customer>, InMemoryRepository<Customer>>();
+            //container.RegisterType<IRepository<Customer>, InMemoryRepository<Customer>>();
+           // container.RegisterType<IRepository<DataAccess.SQL.Customer>, SqlRepository<DataAccess.SQL.Customer>>();
+
         }
     }
 }

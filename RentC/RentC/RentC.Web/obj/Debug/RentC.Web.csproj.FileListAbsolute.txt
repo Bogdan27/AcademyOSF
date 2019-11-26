@@ -200,3 +200,8 @@ C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\System.Thr
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\Unity.Abstractions.pdb
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\Unity.Container.pdb
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\Unity.Mvc.pdb
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\EntityFramework.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\RentC.DataAccess.SQL.dll.config
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\EntityFramework.xml
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\EntityFramework.SqlServer.xml

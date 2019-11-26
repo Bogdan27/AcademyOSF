@@ -38,12 +38,15 @@ C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debu
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\WebActivatorEx.dll
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\Unity.Abstractions.dll
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\Unity.Container.dll
-C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\RentC.DataAccess.InMemory.dll
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\Unity.Mvc.dll
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\netstandard.dll
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\Unity.Abstractions.pdb
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\Unity.Container.pdb
-C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\RentC.DataAccess.InMemory.pdb
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\Unity.Mvc.pdb
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\RentC.DataAccess.SQL.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\RentC.DataAccess.SQL.pdb
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\RentC.DataAccess.SQL.dll.config
+C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web.Tests\bin\Debug\EntityFramework.xml

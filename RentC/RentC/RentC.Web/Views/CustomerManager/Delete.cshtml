@@ -1,4 +1,4 @@
-﻿@model RentC.Core.Customer
+﻿@model RentC.DataAccess.SQL.Customer
 
 @{
     ViewBag.Title = "Delete";
@@ -11,6 +11,14 @@
     <h4>Customer</h4>
     <hr />
     <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CostumerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CostumerID)
+        </dd>
+
         <dt>
             @Html.DisplayNameFor(model => model.Name)
         </dt>
