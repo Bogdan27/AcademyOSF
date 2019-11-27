@@ -50,7 +50,7 @@ namespace RentC.Web.Controllers
             }
         }
 
-        public ActionResult Edit(string Id)
+        public ActionResult Edit(int Id)
         {
             Customer customer = context.Customers.Find(Id);
             if (customer == null)
@@ -65,7 +65,7 @@ namespace RentC.Web.Controllers
 
 
         [HttpPost]
-        public ActionResult Edit(Customer customer, string Id)
+        public ActionResult Edit(Customer customer, int Id)
         {
             //Customer customerToEdit = context.Customers.Find(Id);
             if (context.Customers.Find(Id) == null)
@@ -89,7 +89,7 @@ namespace RentC.Web.Controllers
             }
         }
 
-        public ActionResult Delete(string Id)
+        public ActionResult Delete(int Id)
         {
             Customer customerToDelete = context.Customers.Find(Id);
             if (customerToDelete == null)
@@ -105,7 +105,7 @@ namespace RentC.Web.Controllers
 
         [HttpPost]
         [ActionName("Delete")]
-        public ActionResult ConfirmDelete(string Id)
+        public ActionResult ConfirmDelete(int Id)
         {
             Customer customerToDelete = context.Customers.Find(Id);
             if (customerToDelete == null)

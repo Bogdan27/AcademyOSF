@@ -11,18 +11,26 @@ namespace RentC.DataAccess.SQL
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Reservation
     {
         public string Plate { get; set; }
         public int CostumerID { get; set; }
         public byte ReservStatsID { get; set; }
-        public System.DateTime StartDate { get; set; }
-        public System.DateTime EndDate { get; set; }
+
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MMM-yyyy}")]
+        [DataType(DataType.Date)]
+        public DateTime StartDate { get; set; }
+
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MMM-yyyy}")]
+        [DataType(DataType.Date)]
+        public DateTime EndDate { get; set; }
+
         public string Location { get; set; }
         public string CouponCode { get; set; }
         public int ReservationID { get; set; }
-    
+
         public virtual Car Car { get; set; }
         public virtual Customer Customer { get; set; }
     }

@@ -238,11 +238,14 @@
     <Content Include="Views\CustomerManager\Create.cshtml" />
     <Content Include="Views\CustomerManager\Edit.cshtml" />
     <Content Include="Views\CustomerManager\Delete.cshtml" />
+    <Content Include="Views\ReservationManager\Delete.cshtml" />
+    <Content Include="Views\ReservationManager\Edit.cshtml" />
+    <Content Include="Views\ReservationManager\Create.cshtml" />
+    <Content Include="Views\ReservationManager\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\ReservationManager\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">

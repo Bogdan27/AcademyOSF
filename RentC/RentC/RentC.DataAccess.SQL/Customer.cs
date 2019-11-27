@@ -11,7 +11,8 @@ namespace RentC.DataAccess.SQL
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Customer
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,10 +20,13 @@ namespace RentC.DataAccess.SQL
         {
             this.Reservations = new HashSet<Reservation>();
         }
-    
+
         public int CostumerID { get; set; }
         public string Name { get; set; }
-        public System.DateTime BirthDate { get; set; }
+
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MMM-yyyy}")]
+        [DataType(DataType.Date)]
+        public DateTime BirthDate { get; set; }
         public string Location { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
