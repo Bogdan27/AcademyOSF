@@ -80,6 +80,7 @@
       <DependentUpon>DataBaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="SqlRepository.cs" />
+    <Compile Include="Validations\ValidBirthDate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
