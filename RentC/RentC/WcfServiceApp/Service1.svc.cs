@@ -23,9 +23,9 @@ namespace WcfServiceApp
                 GetListData getListData = new GetListData();
                 SqlConnection connection = new SqlConnection(connectionString);
                 connection.Open();
-                SqlCommand cmd = new SqlCommand("Select * from Reservations", connection);
+                SqlCommand cmd = new SqlCommand("Select * From Cars Where Plate Not In(Select Plate From Reservations)", connection);
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
-                DataTable dataTable = new DataTable();
+                DataTable dataTable = new DataTable { TableName = "Cars" };
                 sqlDataAdapter.Fill(dataTable);
                 getListData.userTable = dataTable;
                 connection.Close();
