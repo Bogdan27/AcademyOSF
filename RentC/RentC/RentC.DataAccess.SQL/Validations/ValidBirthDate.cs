@@ -12,7 +12,7 @@ namespace RentC.DataAccess.SQL
         protected override ValidationResult
         IsValid(object value, ValidationContext validationContext)
         {
-            DateTime _dateJoin = Convert.ToDateTime(value);
+            DateTime _dateJoin = (DateTime)value;
             if (_dateJoin < DateTime.Now)
             {
                 return ValidationResult.Success;
@@ -20,7 +20,7 @@ namespace RentC.DataAccess.SQL
             else
             {
                 return new ValidationResult
-                    ("Birth date can not be greater than current date.");
+                    ("Date can not be greater than current date.");
             }
         }
     }

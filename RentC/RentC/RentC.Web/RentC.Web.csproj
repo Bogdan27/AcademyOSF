@@ -157,6 +157,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
+    <Compile Include="Controllers\AvailableCarsManagerController.cs" />
     <Compile Include="Controllers\CustomerManagerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ReservationManagerController.cs" />
@@ -246,6 +247,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\AvailableCarsManager\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">

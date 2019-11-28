@@ -14,7 +14,7 @@ namespace RentC.Web.Controllers
     {
         //  IRepository<Customer> context;
         Cart_RentEntities context =new Cart_RentEntities();
-
+        
         //public CustomerManagerController(Cart_RentEntities customerContext)
         //{
         //    context = customerContext;

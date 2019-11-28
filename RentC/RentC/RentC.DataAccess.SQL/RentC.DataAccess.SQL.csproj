@@ -42,6 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -74,16 +75,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataBaseModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="DataContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reservation.cs">
       <DependentUpon>DataBaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="SqlRepository.cs" />
+    <Compile Include="Validations\ValidCustomer.cs" />
+    <Compile Include="Validations\ValidPlate.cs" />
     <Compile Include="Validations\ValidBirthDate.cs" />
+    <Compile Include="Validations\ValidStartEndDate.cs" />
+    <Compile Include="Validations\ValidStartDate.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <EntityDeploy Include="DataBaseModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DataBaseModel.Designer.cs</LastGenOutput>
