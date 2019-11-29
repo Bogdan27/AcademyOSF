@@ -27,19 +27,9 @@ namespace RentC
             }
             if (keyData == Keys.Enter)
             {
-                //MenuScreen ms = new MenuScreen();
-                //ms.Show(this);
-                //Hide();
-                goToMenu(this);
+                BackToMenu.goToMenu(this);
             }
             return base.ProcessCmdKey(ref msg, keyData);
-        }
-
-        public static void goToMenu(Control control)
-        {
-            MenuScreen ms = new MenuScreen();
-            ms.Show(control);
-            control.Hide();
         }
 
     }

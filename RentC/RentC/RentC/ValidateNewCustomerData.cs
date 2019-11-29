@@ -19,7 +19,7 @@ namespace RentC
             bool parseResult = Int32.TryParse(clientId, out int a);
             if (parseResult == true)
             {
-                SqlCommand check_User_Name = new SqlCommand("SELECT COUNT(*) FROM Customers WHERE (CostumerID = @user)", connection);
+                SqlCommand check_User_Name = new SqlCommand("SELECT COUNT(*) FROM Customers WHERE (CustomerID = @user)", connection);
                 check_User_Name.Parameters.AddWithValue("@user", clientId);
                 int UserExist = (int)check_User_Name.ExecuteScalar();
                 if (UserExist > 0)

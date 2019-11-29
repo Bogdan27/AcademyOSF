@@ -74,6 +74,13 @@ namespace RentC
 
                 case Keys.D8:
                 case Keys.NumPad8:
+                    ReportScreen reportScreen = new ReportScreen();
+                    reportScreen.Show(this);
+                    this.Hide();
+                    break;
+
+                case Keys.D9:
+                case Keys.NumPad9:
                     this.Close();
                     Application.Exit();
                     break;
@@ -85,15 +92,3 @@ namespace RentC
     }
 }
 
-/*         if (keyData == Keys.D8 || keyData==Keys.NumPad8)
-         {
-             this.Close();
-             Application.Exit();
-
-         }
-         if (keyData == Keys.Enter)
-         {
-             this.Close();
-             MenuScreen ms = new MenuScreen();
-             ms.Show(this);
-         }*/

@@ -14,6 +14,9 @@ namespace RentC
 {
     public partial class ListRentsScreen : Form
     {
+        string lastSelectedItem = "";
+
+
         public ListRentsScreen()
         {
             InitializeComponent();
@@ -24,5 +27,28 @@ namespace RentC
            ShowData.showData("Reservations", dataGridViewRents);
         }
 
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Back)
+            {
+                BackToMenu.goToMenu(this);
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        private void comboBoxSortBy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxSortBy.SelectedItem.ToString().Equals(lastSelectedItem))
+            {
+                dataGridViewRents.Sort(dataGridViewRents.Columns[comboBoxSortBy.Text], ListSortDirection.Descending);
+                lastSelectedItem = "";
+
+            }
+            else
+            {
+                dataGridViewRents.Sort(dataGridViewRents.Columns[comboBoxSortBy.Text], ListSortDirection.Ascending);
+                lastSelectedItem = comboBoxSortBy.Text;
+            }
+        }
     }
 }

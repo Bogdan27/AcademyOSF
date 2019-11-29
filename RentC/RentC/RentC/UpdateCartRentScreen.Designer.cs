@@ -160,6 +160,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.LightSlateGray;
             this.Controls.Add(this.textBoxReservationToUpdate);
             this.Controls.Add(this.labelUpdate);
             this.Controls.Add(this.buttonUpdate);

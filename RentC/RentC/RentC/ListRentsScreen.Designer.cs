@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.dataGridViewRents = new System.Windows.Forms.DataGridView();
+            this.comboBoxSortBy = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRents)).BeginInit();
             this.SuspendLayout();
             // 
@@ -38,14 +39,32 @@
             this.dataGridViewRents.Location = new System.Drawing.Point(47, 46);
             this.dataGridViewRents.Name = "dataGridViewRents";
             this.dataGridViewRents.RowTemplate.Height = 24;
-            this.dataGridViewRents.Size = new System.Drawing.Size(705, 358);
+            this.dataGridViewRents.Size = new System.Drawing.Size(601, 358);
             this.dataGridViewRents.TabIndex = 0;
+            // 
+            // comboBoxSortBy
+            // 
+            this.comboBoxSortBy.FormattingEnabled = true;
+            this.comboBoxSortBy.Items.AddRange(new object[] {
+            "CustomerID",
+            "Plate",
+            "StartDate",
+            "EndDate",
+            "Location",
+            "ReservationID"});
+            this.comboBoxSortBy.Location = new System.Drawing.Point(667, 68);
+            this.comboBoxSortBy.Name = "comboBoxSortBy";
+            this.comboBoxSortBy.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxSortBy.TabIndex = 3;
+            this.comboBoxSortBy.SelectedIndexChanged += new System.EventHandler(this.comboBoxSortBy_SelectedIndexChanged);
             // 
             // ListRentsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBoxSortBy);
             this.Controls.Add(this.dataGridViewRents);
             this.Name = "ListRentsScreen";
             this.Text = "ListRentsScreen";
@@ -58,5 +77,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridViewRents;
+        private System.Windows.Forms.ComboBox comboBoxSortBy;
     }
 }

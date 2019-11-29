@@ -36,6 +36,7 @@
             this.labelUpdateCustomer = new System.Windows.Forms.Label();
             this.labelListCustomers = new System.Windows.Forms.Label();
             this.labelQuit = new System.Windows.Forms.Label();
+            this.labelReportScreen = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelRegisterCar
@@ -112,11 +113,21 @@
             // 
             this.labelQuit.AutoSize = true;
             this.labelQuit.Font = new System.Drawing.Font("Arial", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuit.Location = new System.Drawing.Point(45, 360);
+            this.labelQuit.Location = new System.Drawing.Point(45, 400);
             this.labelQuit.Name = "labelQuit";
             this.labelQuit.Size = new System.Drawing.Size(87, 28);
             this.labelQuit.TabIndex = 7;
-            this.labelQuit.Text = "8. Quit";
+            this.labelQuit.Text = "9. Quit";
+            // 
+            // labelReportScreen
+            // 
+            this.labelReportScreen.AutoSize = true;
+            this.labelReportScreen.Font = new System.Drawing.Font("Arial", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelReportScreen.Location = new System.Drawing.Point(45, 360);
+            this.labelReportScreen.Name = "labelReportScreen";
+            this.labelReportScreen.Size = new System.Drawing.Size(201, 28);
+            this.labelReportScreen.TabIndex = 8;
+            this.labelReportScreen.Text = "8. Report Screen";
             // 
             // MenuScreen
             // 
@@ -124,6 +135,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(800, 516);
+            this.Controls.Add(this.labelReportScreen);
             this.Controls.Add(this.labelQuit);
             this.Controls.Add(this.labelListCustomers);
             this.Controls.Add(this.labelUpdateCustomer);
@@ -148,5 +160,6 @@
         private System.Windows.Forms.Label labelUpdateCustomer;
         private System.Windows.Forms.Label labelListCustomers;
         private System.Windows.Forms.Label labelQuit;
+        private System.Windows.Forms.Label labelReportScreen;
     }
 }

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace RentC
 {
-    public partial class UpdateCustomerScreen : Form
+    public partial class UpdateCustomerScreen : Form 
     {
         ValidateNewCustomerData validateNewCustomerData = new ValidateNewCustomerData();
         String connectionString = ConfigurationManager.ConnectionStrings["rentConnectionString"].ConnectionString;
@@ -27,7 +27,7 @@ namespace RentC
             if (validateNewCustomerData.validateAllData(connectionString, "Updated", dateTimePickerBirthDate))
             {
                 updateCustomer();
-                WelcomeScreen.goToMenu(this);
+                BackToMenu.goToMenu(this);
             }
         }
 
@@ -38,14 +38,14 @@ namespace RentC
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     string updateCustomer ="UPDATE Customers set Name=@Name, BirthDate=@BirthDate, Location=@Location" +
-                        " where CostumerID=@CostumerIdToCheck";
+                        " where CustomerID=@CustomerIdToCheck";
                     using (SqlCommand queryUpdateCustomer = new SqlCommand(updateCustomer))
                     {
                         queryUpdateCustomer.Connection = connection;
                         queryUpdateCustomer.Parameters.Add("@Name", SqlDbType.VarChar, 50).Value = textBoxClientName.Text;
                         queryUpdateCustomer.Parameters.Add("@BirthDate", SqlDbType.Date).Value = dateTimePickerBirthDate.Value.ToString("dd/MMM/yyyy"); ;
                         queryUpdateCustomer.Parameters.Add("@Location", SqlDbType.VarChar, 50).Value = textBoxLocation.Text;
-                        queryUpdateCustomer.Parameters.Add("@CostumerIdToCheck", SqlDbType.Int).Value = Int32.Parse(textBoxUpdateCustomer.Text);
+                        queryUpdateCustomer.Parameters.Add("@CustomerIdToCheck", SqlDbType.Int).Value = Int32.Parse(textBoxUpdateCustomer.Text);
 
                         connection.Open();
                         queryUpdateCustomer.ExecuteNonQuery();
@@ -57,6 +57,15 @@ namespace RentC
                 MessageBox.Show("Exception" + ex.Message);
             }
 
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Back)
+            {
+                BackToMenu.goToMenu(this);
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
         }
 
     }

@@ -27,7 +27,7 @@ namespace RentC
             if (validateNewCustomerData.validateAllData(connectionString,"Added",dateTimePickerBirthDate))
             {
                 addCustomer();
-                WelcomeScreen.goToMenu(this);
+                BackToMenu.goToMenu(this);
             } 
 
         }
@@ -45,7 +45,6 @@ namespace RentC
                     using (SqlCommand queryRegisterNewCustomer = new SqlCommand(insertCustomer))
                     {
                         queryRegisterNewCustomer.Connection = connection;
-                      //  queryRegisterNewCustomer.Parameters.Add("@costumerId", SqlDbType.Int).Value = Int32.Parse(textBoxClientId.Text);
                         queryRegisterNewCustomer.Parameters.Add("@name", SqlDbType.VarChar, 50).Value = textBoxClientName.Text;
                         queryRegisterNewCustomer.Parameters.Add("@birthDate", SqlDbType.Date, 30).Value = dateTimePickerBirthDate.Value.ToString("dd/MMM/yyyy");
                         queryRegisterNewCustomer.Parameters.Add("@location", SqlDbType.VarChar, 50).Value = textBoxLocation.Text;
@@ -60,6 +59,15 @@ namespace RentC
                 MessageBox.Show("Exception" + ex.Message);
             }
 
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Back)
+            {
+                BackToMenu.goToMenu(this);
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
         }
     }
 }
