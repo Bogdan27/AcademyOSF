@@ -26,33 +26,6 @@ namespace RentC.DataAccess.SQL.Validations
 
             if (UserExist > 0)
             {
-
-                //check_Plate = new SqlCommand("SELECT COUNT(*) FROM Reservations WHERE (Plate = @Plate)", con);
-                //check_Plate.Parameters.AddWithValue("@Plate", plate);
-                //UserExist = (int)check_Plate.ExecuteScalar();
-                //if (UserExist == 0)
-                //{
-                //    con.Close();
-                //    return ValidationResult.Success;
-                //}
-                //else
-                //{
-                //    check_Plate = new SqlCommand("SELECT COUNT(*) FROM Reservations where Plate=@Plate AND FORMAT(@StartDate, 'yyyy-MM-dd') NOT Between  FORMAT(StartDate, 'yyyy-MM-dd') AND  FORMAT(EndDate, 'yyyy-MM-dd')", con);
-                //    check_Plate.Parameters.AddWithValue("@StartDate",reservation.StartDate.Date);
-                //    check_Plate.Parameters.AddWithValue("@Plate", plate);
-
-                //    UserExist = (int)check_Plate.ExecuteScalar();
-                //    if (UserExist == 0)
-                //    {
-                //        return new ValidationResult("Car is not available.");
-                //    }
-                //    else
-                //    {
-                //        con.Close();
-                //        return ValidationResult.Success;
-                //    }
-                //}
-
                 con.Close();
                 return ValidationResult.Success;
 
@@ -65,3 +38,42 @@ namespace RentC.DataAccess.SQL.Validations
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//check_Plate = new SqlCommand("SELECT COUNT(*) FROM Reservations WHERE (Plate = @Plate)", con);
+//check_Plate.Parameters.AddWithValue("@Plate", plate);
+//UserExist = (int)check_Plate.ExecuteScalar();
+//if (UserExist == 0)
+//{
+//    con.Close();
+//    return ValidationResult.Success;
+//}
+//else
+//{
+//    check_Plate = new SqlCommand("SELECT COUNT(*) FROM Reservations where Plate=@Plate AND FORMAT(@StartDate, 'yyyy-MM-dd') NOT Between  FORMAT(StartDate, 'yyyy-MM-dd') AND  FORMAT(EndDate, 'yyyy-MM-dd')", con);
+//    check_Plate.Parameters.AddWithValue("@StartDate",reservation.StartDate.Date);
+//    check_Plate.Parameters.AddWithValue("@Plate", plate);
+
+//    UserExist = (int)check_Plate.ExecuteScalar();
+//    if (UserExist == 0)
+//    {
+//        return new ValidationResult("Car is not available.");
+//    }
+//    else
+//    {
+//        con.Close();
+//        return ValidationResult.Success;
+//    }
+//}

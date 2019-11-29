@@ -15,7 +15,7 @@ namespace RentC.DataAccess.SQL
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    public partial class Reservation //:  IValidatableObject
+    public partial class Reservation 
     {
 
         [Required]
@@ -31,7 +31,6 @@ namespace RentC.DataAccess.SQL
 
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MMM-yyyy}")]
         [DataType(DataType.Date)]
-       // [ValidStartEndDate]
         [ValidStartDate]
         public DateTime StartDate { get; set; }
 

@@ -29,16 +29,6 @@ namespace RentC.DataAccess.SQL
         public decimal PricePerDay { get; set; }
         public string Location { get; set; }
 
-        //public Car(Car c)
-        //{
-        //    this.CarID = c.CarID;
-        //    this.Plate = c.Plate;
-        //    this.Manufacturer = c.Manufacturer;
-        //    this.Model = c.Model;
-        //    this.PricePerDay = c.PricePerDay;
-        //    this.Location = c.Location;
-
-      //  }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reservation> Reservations { get; set; }
