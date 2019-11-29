@@ -28,19 +28,55 @@ namespace WebService
         }
 
         [WebMethod]
-        public DataTable getData()
+        public List<Car> getData()
         {
-          //  String connectionString = ConfigurationManager.ConnectionStrings["rentConnectionString"].ConnectionString;
-            Cart_RentEntities connection = new Cart_RentEntities();
-            SqlConnection con = (SqlConnection)connection.Database.Connection;
-            DataTable dataTable = new DataTable { TableName = "Cars" };
 
-            con.Open();
-            SqlCommand cmd = new SqlCommand("Select * From Cars Where Plate Not In(Select Plate From Reservations)", con);
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
-            sqlDataAdapter.Fill(dataTable);
-            con.Close();
-            return dataTable;
+            Cart_RentEntities rentEntities = new Cart_RentEntities();
+            //String connectionString = ConfigurationManager.ConnectionStrings["Cart_RentEntities"].ConnectionString;
+
+            SqlConnection connection = (SqlConnection)rentEntities.Database.Connection;
+            SqlCommand cmd = new SqlCommand("Select * From Cars Where Plate Not In(Select Plate From Reservations)", connection);
+
+            var model = new List<Car>();
+            using (connection)
+            {
+                connection.Open();
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    var car = new Car();
+                    car.CarID = (int)rdr["CarId"];
+                    car.Plate = (string)rdr["Plate"];
+                    car.Model = (string)rdr["Model"];
+                    car.Manufacturer = (string)rdr["Manufacturer"];
+                    car.PricePerDay = (decimal)rdr["PricePerDay"];
+                    car.Location = (string)rdr["Location"];
+
+                    //student.FirstName = rdr[""];
+                    //student.LastName = rdr["LastName"];
+                    //student.Class = rdr["Class"];
+
+                    model.Add(car);
+                }
+
+
+            }
+
+            return model;
+
+
+            //  String connectionString = ConfigurationManager.ConnectionStrings["rentConnectionString"].ConnectionString;
+            //Cart_RentEntities connection = new Cart_RentEntities();
+            //SqlConnection con = (SqlConnection)connection.Database.Connection;
+            //DataTable dataTable = new DataTable { TableName = "Cars" };
+
+            //con.Open();
+            //SqlCommand cmd = new SqlCommand("Select * From Cars Where Plate Not In(Select Plate From Reservations)", con);
+            //SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+            //sqlDataAdapter.Fill(dataTable);
+            //con.Close();
+            
+            //return dataTable;
         }
     }
 }

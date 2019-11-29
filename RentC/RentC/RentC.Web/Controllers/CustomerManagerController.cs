@@ -12,17 +12,9 @@ namespace RentC.Web.Controllers
 {
     public class CustomerManagerController : Controller
     {
-        //  IRepository<Customer> context;
         Cart_RentEntities context =new Cart_RentEntities();
-        
-        //public CustomerManagerController(Cart_RentEntities customerContext)
-        //{
-        //    context = customerContext;
-        //}
-        // GET: CustomerManager
         public ActionResult Index()
         {
-           // List<Customer> customers = context.Customers.ToList();
             return View(context.Customers.ToList());
         }
 
@@ -42,7 +34,6 @@ namespace RentC.Web.Controllers
             else
             {
 
-                //context.(customer);
                 context.Customers.Add(customer);
                 context.SaveChanges();
 

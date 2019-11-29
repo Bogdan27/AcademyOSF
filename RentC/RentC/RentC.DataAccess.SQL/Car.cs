@@ -11,9 +11,11 @@ namespace RentC.DataAccess.SQL
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Data;
+
     public partial class Car
     {
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Car()
         {
@@ -26,7 +28,18 @@ namespace RentC.DataAccess.SQL
         public string Model { get; set; }
         public decimal PricePerDay { get; set; }
         public string Location { get; set; }
-    
+
+        //public Car(Car c)
+        //{
+        //    this.CarID = c.CarID;
+        //    this.Plate = c.Plate;
+        //    this.Manufacturer = c.Manufacturer;
+        //    this.Model = c.Model;
+        //    this.PricePerDay = c.PricePerDay;
+        //    this.Location = c.Location;
+
+      //  }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reservation> Reservations { get; set; }
     }

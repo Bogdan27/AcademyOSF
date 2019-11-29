@@ -6,6 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentC", "RentC\RentC.csproj", "{55B8B69E-CA3E-4A85-86A0-2B5E696C8372}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentC.Web", "RentC.Web\RentC.Web.csproj", "{87BB0490-F6B6-413F-82F4-A89F1B1FD189}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F941860A-B4E4-41D8-8B98-4B3D17E7E47E} = {F941860A-B4E4-41D8-8B98-4B3D17E7E47E}
+		{5EA60E4B-3C2E-495A-ADFE-C7136D2A1508} = {5EA60E4B-3C2E-495A-ADFE-C7136D2A1508}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentC.Web.Tests", "RentC.Web.Tests\RentC.Web.Tests.csproj", "{D70397EB-B433-489A-86FB-5D8105B90498}"
 EndProject
@@ -14,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentC.DataAccess.InMemory", "RentC.DataAccess.InMemory\RentC.DataAccess.InMemory.csproj", "{A926C9B1-2272-44E8-98A8-9651C9425286}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentC.DataAccess.SQL", "RentC.DataAccess.SQL\RentC.DataAccess.SQL.csproj", "{8EB3FAE0-7FC9-48B7-B494-795C7FB3E419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceApp", "..\..\..\..\..\Desktop\New folder (2)\WcfServiceApp\WcfServiceApp.csproj", "{F941860A-B4E4-41D8-8B98-4B3D17E7E47E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService", "WebService\WebService.csproj", "{5EA60E4B-3C2E-495A-ADFE-C7136D2A1508}"
 EndProject
@@ -47,6 +53,10 @@ Global
 		{8EB3FAE0-7FC9-48B7-B494-795C7FB3E419}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EB3FAE0-7FC9-48B7-B494-795C7FB3E419}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EB3FAE0-7FC9-48B7-B494-795C7FB3E419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F941860A-B4E4-41D8-8B98-4B3D17E7E47E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F941860A-B4E4-41D8-8B98-4B3D17E7E47E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F941860A-B4E4-41D8-8B98-4B3D17E7E47E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F941860A-B4E4-41D8-8B98-4B3D17E7E47E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5EA60E4B-3C2E-495A-ADFE-C7136D2A1508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5EA60E4B-3C2E-495A-ADFE-C7136D2A1508}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EA60E4B-3C2E-495A-ADFE-C7136D2A1508}.Release|Any CPU.ActiveCfg = Release|Any CPU

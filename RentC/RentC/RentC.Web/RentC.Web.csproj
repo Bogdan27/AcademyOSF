@@ -83,6 +83,8 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
@@ -157,6 +159,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
+    <Compile Include="Connected Services\WcfServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WebServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AvailableCarsManagerController.cs" />
     <Compile Include="Controllers\CustomerManagerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -167,6 +179,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Connected Services\WcfServiceReference\RentC.Web.WcfServiceReference.GetListData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\WcfServiceReference\Service1.disco" />
+    <None Include="Connected Services\WcfServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\WcfServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\WcfServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\WebServiceReference\WebService1.disco" />
+    <None Include="Connected Services\WebServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\WebServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\WebServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -193,6 +222,20 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Connected Services\WcfServiceReference\Service1.wsdl" />
+    <None Include="Connected Services\WcfServiceReference\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WcfServiceReference\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WcfServiceReference\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WcfServiceReference\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WebServiceReference\WebService1.wsdl" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -243,11 +286,12 @@
     <Content Include="Views\ReservationManager\Edit.cshtml" />
     <Content Include="Views\ReservationManager\Create.cshtml" />
     <Content Include="Views\ReservationManager\Index.cshtml" />
+    <Content Include="Views\AvailableCarsManager\Index.cshtml" />
+    <Content Include="System.Data.DataTable.datasource" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\AvailableCarsManager\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
@@ -275,6 +319,13 @@
       <Project>{8eb3fae0-7fc9-48b7-b494-795c7fb3e419}</Project>
       <Name>RentC.DataAccess.SQL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\WcfServiceReference\" />
+    <WCFMetadataStorage Include="Connected Services\WebServiceReference\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
