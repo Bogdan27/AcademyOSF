@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-//using RentC.Core;
-using RentC.DataAccess.InMemory;
-using RentC.Core.Contracts;
 using RentC.DataAccess.SQL;
 
 namespace RentC.Web.Controllers
@@ -13,9 +10,44 @@ namespace RentC.Web.Controllers
     public class CustomerManagerController : Controller
     {
         Cart_RentEntities context =new Cart_RentEntities();
-        public ActionResult Index()
+        public ActionResult Index(string sortOrder)
         {
-            return View(context.Customers.ToList());
+            ViewBag.CostumerIdSortParm = String.IsNullOrEmpty(sortOrder) ? "costumerID_desc" : "";
+            ViewBag.NameSortParm = sortOrder == "Name" ? "name_desc" : "Name";
+            ViewBag.DateSortParm = sortOrder == "Date" ? "date_desc" : "Date";
+            ViewBag.LocationSortParm = sortOrder == "Location" ? "location_desc" : "Location";
+
+            var customers = from c in context.Customers
+                           select c;
+            switch (sortOrder)
+            {
+                case "costumerID_desc":
+                    customers = customers.OrderByDescending(c => c.CustomerID);
+                    break;
+                case "Name":
+                    customers = customers.OrderBy(c => c.Name);
+                    break;
+                case "name_desc":
+                    customers = customers.OrderByDescending(c => c.Name);
+                    break;
+                case "Date":
+                    customers = customers.OrderBy(c => c.BirthDate);
+                    break;
+                case "date_desc":
+                    customers = customers.OrderByDescending(c => c.BirthDate);
+                    break;
+                case "Location":
+                    customers = customers.OrderBy(c => c.Location);
+                    break;
+                case "location_desc":
+                    customers = customers.OrderByDescending(c => c.Location);
+                    break;
+                default:
+                    customers = customers.OrderBy(c => c.CustomerID);
+                    break;
+            }
+            return View(customers.ToList());
+
         }
 
         public ActionResult Create()

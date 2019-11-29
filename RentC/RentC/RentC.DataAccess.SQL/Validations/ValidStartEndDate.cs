@@ -20,7 +20,6 @@ namespace RentC.DataAccess.SQL.Validations
             else
             {
                 return new ValidationResult
-                  //  ("Start date must be before end date.");
                   (startDate.Date.ToString() + "     "+ r.EndDate.Date.ToString());
             }
         }

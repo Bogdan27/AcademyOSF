@@ -10,5 +10,3 @@ C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\bin
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\bin\Debug\EntityFramework.xml
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\obj\Debug\RentC.DataAccess.SQL.csproj.CopyComplete
-C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\bin\Debug\RentC.Core.dll
-C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.DataAccess.SQL\bin\Debug\RentC.Core.pdb

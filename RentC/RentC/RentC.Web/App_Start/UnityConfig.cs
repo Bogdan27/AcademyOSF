@@ -1,6 +1,4 @@
-using RentC.Core;
-using RentC.Core.Contracts;
-using RentC.DataAccess.InMemory;
+
 using RentC.DataAccess.SQL;
 using System;
 

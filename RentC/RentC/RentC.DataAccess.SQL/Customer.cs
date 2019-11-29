@@ -24,7 +24,7 @@ namespace RentC.DataAccess.SQL
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int CostumerID { get; set; }
+        public int CustomerID { get; set; }
 
         [Required]
         public string Name { get; set; }

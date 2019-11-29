@@ -16,7 +16,7 @@
     <EntitySetMapping Name="Customers">
       <EntityTypeMapping TypeName="Cart_RentModel.Customer">
         <MappingFragment StoreEntitySet="Customers">
-          <ScalarProperty Name="CostumerID" ColumnName="CostumerID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
           <ScalarProperty Name="Location" ColumnName="Location" />
@@ -27,7 +27,7 @@
       <EntityTypeMapping TypeName="Cart_RentModel.Reservation">
         <MappingFragment StoreEntitySet="Reservations">
           <ScalarProperty Name="Plate" ColumnName="Plate" />
-          <ScalarProperty Name="CostumerID" ColumnName="CostumerID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
           <ScalarProperty Name="ReservStatsID" ColumnName="ReservStatsID" />
           <ScalarProperty Name="StartDate" ColumnName="StartDate" />
           <ScalarProperty Name="EndDate" ColumnName="EndDate" />

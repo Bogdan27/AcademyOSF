@@ -18,7 +18,7 @@ namespace RentC.DataAccess.SQL.Validations
             con.Open();
 
             int customerID = Convert.ToInt32(value);
-            SqlCommand check_User_Name = new SqlCommand("SELECT COUNT(*) FROM Customers WHERE (costumerId = @user)", con);
+            SqlCommand check_User_Name = new SqlCommand("SELECT COUNT(*) FROM Customers WHERE (customerId = @user)", con);
             check_User_Name.Parameters.AddWithValue("@user", customerID);
             int UserExist = (int)check_User_Name.ExecuteScalar();
             if (UserExist > 0)

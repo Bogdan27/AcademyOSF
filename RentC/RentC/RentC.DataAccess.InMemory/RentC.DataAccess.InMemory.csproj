@@ -45,11 +45,5 @@
     <Compile Include="InMemoryRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RentC.Core\RentC.Core.csproj">
-      <Project>{502b996d-711c-4325-bf91-5d1578240aed}</Project>
-      <Name>RentC.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

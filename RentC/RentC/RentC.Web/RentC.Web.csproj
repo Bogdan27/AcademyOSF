@@ -164,11 +164,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\WebServiceReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Controllers\AvailableCarsManagerController.cs" />
     <Compile Include="Controllers\CustomerManagerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -186,13 +181,6 @@
     <None Include="Connected Services\WcfServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\WcfServiceReference\configuration.svcinfo" />
     <None Include="Connected Services\WcfServiceReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Connected Services\WebServiceReference\WebService1.disco" />
-    <None Include="Connected Services\WebServiceReference\configuration91.svcinfo" />
-    <None Include="Connected Services\WebServiceReference\configuration.svcinfo" />
-    <None Include="Connected Services\WebServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -235,7 +223,6 @@
     <None Include="Connected Services\WcfServiceReference\Service13.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\WebServiceReference\WebService1.wsdl" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -307,14 +294,6 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RentC.Core\RentC.Core.csproj">
-      <Project>{502b996d-711c-4325-bf91-5d1578240aed}</Project>
-      <Name>RentC.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RentC.DataAccess.InMemory\RentC.DataAccess.InMemory.csproj">
-      <Project>{a926c9b1-2272-44e8-98a8-9651c9425286}</Project>
-      <Name>RentC.DataAccess.InMemory</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RentC.DataAccess.SQL\RentC.DataAccess.SQL.csproj">
       <Project>{8eb3fae0-7fc9-48b7-b494-795c7fb3e419}</Project>
       <Name>RentC.DataAccess.SQL</Name>
@@ -325,7 +304,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\WcfServiceReference\" />
-    <WCFMetadataStorage Include="Connected Services\WebServiceReference\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

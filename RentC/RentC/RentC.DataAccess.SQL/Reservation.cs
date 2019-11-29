@@ -15,7 +15,7 @@ namespace RentC.DataAccess.SQL
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    public partial class Reservation : IValidatableObject
+    public partial class Reservation //:  IValidatableObject
     {
 
         [Required]
@@ -24,14 +24,14 @@ namespace RentC.DataAccess.SQL
 
         [Required]
         [ValidCustomer]
-        public int CostumerID { get; set; }
+        public int CustomerID { get; set; }
 
         [Range(0, 1, ErrorMessage = "Status must e 0 or 1")]
         public byte ReservStatsID { get; set; }
 
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MMM-yyyy}")]
         [DataType(DataType.Date)]
-      //  [ValidStartEndDate]
+       // [ValidStartEndDate]
         [ValidStartDate]
         public DateTime StartDate { get; set; }
 
@@ -53,14 +53,14 @@ namespace RentC.DataAccess.SQL
 
 
 
-        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
-        {
-            int result = DateTime.Compare(StartDate, EndDate);
-            if (result < 0)
-            {
-                yield return new ValidationResult("Start Date must be before End Date", new[] { "Confirm Date" });
-            }
-        }
+        //public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        //{
+        //    int result = DateTime.Compare(StartDate, EndDate);
+        //    if (result < 0)
+        //    {
+        //        yield return new ValidationResult("Start Date must be before End Date", new[] { "Confirm Date" });
+        //    }
+        //}
 
     }
 

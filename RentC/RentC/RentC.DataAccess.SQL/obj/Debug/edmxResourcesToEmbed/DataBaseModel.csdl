@@ -14,9 +14,9 @@
   </EntityType>
   <EntityType Name="Customer">
     <Key>
-      <PropertyRef Name="CostumerID" />
+      <PropertyRef Name="CustomerID" />
     </Key>
-    <Property Name="CostumerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
@@ -27,7 +27,7 @@
       <PropertyRef Name="ReservationID" />
     </Key>
     <Property Name="Plate" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="CostumerID" Type="Int32" Nullable="false" />
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
     <Property Name="ReservStatsID" Type="Byte" Nullable="false" />
     <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="EndDate" Type="DateTime" Nullable="false" Precision="0" />
@@ -54,10 +54,10 @@
     <End Role="Reservations" Type="Self.Reservation" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Customers">
-        <PropertyRef Name="CostumerID" />
+        <PropertyRef Name="CustomerID" />
       </Principal>
       <Dependent Role="Reservations">
-        <PropertyRef Name="CostumerID" />
+        <PropertyRef Name="CustomerID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

@@ -185,11 +185,7 @@ C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\obj\Debug\Rent
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\obj\Debug\RentC.Web.csproj.CopyComplete
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\obj\Debug\RentC.Web.dll
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\obj\Debug\RentC.Web.pdb
-C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\RentC.Core.dll
-C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\RentC.DataAccess.InMemory.dll
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\RentC.DataAccess.SQL.dll
-C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\RentC.Core.pdb
-C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\RentC.DataAccess.InMemory.pdb
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\RentC.DataAccess.SQL.pdb
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\System.Threading.Tasks.Extensions.dll
 C:\Users\Lenovo\Documents\GitHub\AcademyOSF\RentC\RentC\RentC.Web\bin\Unity.Abstractions.dll
