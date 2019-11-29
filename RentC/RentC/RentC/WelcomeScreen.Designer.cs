@@ -32,30 +32,30 @@
             this.textBoxWelcome = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
+            // labelInfo
+            // 
+            this.labelInfo.AutoSize = true;
+            this.labelInfo.Font = new System.Drawing.Font("Arial", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInfo.Location = new System.Drawing.Point(221, 634);
+            this.labelInfo.Name = "labelInfo";
+            this.labelInfo.Size = new System.Drawing.Size(534, 32);
+            this.labelInfo.TabIndex = 1;
+            this.labelInfo.Text = "Press ENTER to continue or ESC to quit.";
+            // 
             // textBoxWelcome
             // 
             this.textBoxWelcome.BackColor = System.Drawing.Color.LightSlateGray;
             this.textBoxWelcome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxWelcome.Font = new System.Drawing.Font("Arial", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxWelcome.Location = new System.Drawing.Point(124, 21);
+            this.textBoxWelcome.Location = new System.Drawing.Point(137, 36);
             this.textBoxWelcome.Multiline = true;
             this.textBoxWelcome.Name = "textBoxWelcome";
             this.textBoxWelcome.ReadOnly = true;
-            this.textBoxWelcome.Size = new System.Drawing.Size(544, 104);
+            this.textBoxWelcome.Size = new System.Drawing.Size(775, 104);
             this.textBoxWelcome.TabIndex = 0;
+            this.textBoxWelcome.TabStop = false;
             this.textBoxWelcome.Text = "Welcome to RentC, your brand new solution to manage\n and control your company\'s d" +
     "ata without missing anything.";
-            // 
-            // labelInfo
-            // 
-            this.labelInfo.AutoSize = true;
-            this.labelInfo.Font = new System.Drawing.Font("Arial", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInfo.Location = new System.Drawing.Point(118, 448);
-            this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(534, 32);
-            this.labelInfo.TabIndex = 1;
-            this.labelInfo.Text = "Press ENTER to continue or ESC to quit.";
-
             // 
             // WelcomeScreen
             // 
@@ -63,10 +63,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.LightSlateGray;
-            this.ClientSize = new System.Drawing.Size(800, 516);
+            this.ClientSize = new System.Drawing.Size(1040, 815);
             this.Controls.Add(this.labelInfo);
             this.Controls.Add(this.textBoxWelcome);
             this.Name = "WelcomeScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WelcomeScreen";
             this.ResumeLayout(false);
             this.PerformLayout();

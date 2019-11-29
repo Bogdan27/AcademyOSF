@@ -39,7 +39,7 @@
             this.dataGridViewAvailableCars.Location = new System.Drawing.Point(58, 36);
             this.dataGridViewAvailableCars.Name = "dataGridViewAvailableCars";
             this.dataGridViewAvailableCars.RowTemplate.Height = 24;
-            this.dataGridViewAvailableCars.Size = new System.Drawing.Size(596, 358);
+            this.dataGridViewAvailableCars.Size = new System.Drawing.Size(825, 623);
             this.dataGridViewAvailableCars.TabIndex = 2;
             // 
             // comboBoxSortBy
@@ -52,7 +52,7 @@
             "Model",
             "PricePerDay",
             "Location"});
-            this.comboBoxSortBy.Location = new System.Drawing.Point(667, 50);
+            this.comboBoxSortBy.Location = new System.Drawing.Point(907, 60);
             this.comboBoxSortBy.Name = "comboBoxSortBy";
             this.comboBoxSortBy.Size = new System.Drawing.Size(121, 24);
             this.comboBoxSortBy.TabIndex = 3;
@@ -63,10 +63,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1040, 815);
             this.Controls.Add(this.comboBoxSortBy);
             this.Controls.Add(this.dataGridViewAvailableCars);
             this.Name = "ListAvailableCarsList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListAvailableCarsList";
             this.Load += new System.EventHandler(this.ListAvailableCarsList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAvailableCars)).EndInit();

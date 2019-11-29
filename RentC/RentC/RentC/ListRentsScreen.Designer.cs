@@ -39,7 +39,7 @@
             this.dataGridViewRents.Location = new System.Drawing.Point(47, 46);
             this.dataGridViewRents.Name = "dataGridViewRents";
             this.dataGridViewRents.RowTemplate.Height = 24;
-            this.dataGridViewRents.Size = new System.Drawing.Size(601, 358);
+            this.dataGridViewRents.Size = new System.Drawing.Size(826, 640);
             this.dataGridViewRents.TabIndex = 0;
             // 
             // comboBoxSortBy
@@ -52,7 +52,7 @@
             "EndDate",
             "Location",
             "ReservationID"});
-            this.comboBoxSortBy.Location = new System.Drawing.Point(667, 68);
+            this.comboBoxSortBy.Location = new System.Drawing.Point(907, 60);
             this.comboBoxSortBy.Name = "comboBoxSortBy";
             this.comboBoxSortBy.Size = new System.Drawing.Size(121, 24);
             this.comboBoxSortBy.TabIndex = 3;
@@ -63,10 +63,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1040, 815);
             this.Controls.Add(this.comboBoxSortBy);
             this.Controls.Add(this.dataGridViewRents);
             this.Name = "ListRentsScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListRentsScreen";
             this.Load += new System.EventHandler(this.ListRentsScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRents)).EndInit();

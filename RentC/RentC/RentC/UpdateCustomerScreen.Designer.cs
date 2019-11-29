@@ -122,7 +122,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.ClientSize = new System.Drawing.Size(800, 515);
             this.Controls.Add(this.textBoxUpdateCustomer);
             this.Controls.Add(this.labelClientUpdate);
             this.Controls.Add(this.dateTimePickerBirthDate);

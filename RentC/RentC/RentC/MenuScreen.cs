@@ -74,13 +74,6 @@ namespace RentC
 
                 case Keys.D8:
                 case Keys.NumPad8:
-                    ReportScreen reportScreen = new ReportScreen();
-                    reportScreen.Show(this);
-                    this.Hide();
-                    break;
-
-                case Keys.D9:
-                case Keys.NumPad9:
                     this.Close();
                     Application.Exit();
                     break;

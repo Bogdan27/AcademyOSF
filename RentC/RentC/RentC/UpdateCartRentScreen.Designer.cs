@@ -140,7 +140,7 @@
             // 
             // textBoxReservationToUpdate
             // 
-            this.textBoxReservationToUpdate.Location = new System.Drawing.Point(316, 18);
+            this.textBoxReservationToUpdate.Location = new System.Drawing.Point(365, 19);
             this.textBoxReservationToUpdate.Name = "textBoxReservationToUpdate";
             this.textBoxReservationToUpdate.Size = new System.Drawing.Size(100, 22);
             this.textBoxReservationToUpdate.TabIndex = 25;
@@ -159,8 +159,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.BackColor = System.Drawing.Color.LightSlateGray;
+            this.ClientSize = new System.Drawing.Size(800, 515);
             this.Controls.Add(this.textBoxReservationToUpdate);
             this.Controls.Add(this.labelUpdate);
             this.Controls.Add(this.buttonUpdate);
@@ -175,6 +175,7 @@
             this.Controls.Add(this.labelClientId);
             this.Controls.Add(this.labelCartPlate);
             this.Name = "UpdateCartRentScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateCartRentScreen";
             this.ResumeLayout(false);
             this.PerformLayout();

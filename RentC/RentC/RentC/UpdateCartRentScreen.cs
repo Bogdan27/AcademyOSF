@@ -63,7 +63,7 @@ namespace RentC
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (keyData == Keys.Back)
+            if (keyData == Keys.Escape)
             {
                 BackToMenu.goToMenu(this);
             }

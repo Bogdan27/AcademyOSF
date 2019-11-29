@@ -36,10 +36,10 @@
             // dataGridViewCustomers
             // 
             this.dataGridViewCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCustomers.Location = new System.Drawing.Point(50, 39);
+            this.dataGridViewCustomers.Location = new System.Drawing.Point(152, 48);
             this.dataGridViewCustomers.Name = "dataGridViewCustomers";
             this.dataGridViewCustomers.RowTemplate.Height = 24;
-            this.dataGridViewCustomers.Size = new System.Drawing.Size(604, 358);
+            this.dataGridViewCustomers.Size = new System.Drawing.Size(639, 662);
             this.dataGridViewCustomers.TabIndex = 1;
             // 
             // comboBoxSortBy
@@ -50,7 +50,7 @@
             "Name",
             "BirthDate",
             "Location"});
-            this.comboBoxSortBy.Location = new System.Drawing.Point(667, 51);
+            this.comboBoxSortBy.Location = new System.Drawing.Point(907, 48);
             this.comboBoxSortBy.Name = "comboBoxSortBy";
             this.comboBoxSortBy.Size = new System.Drawing.Size(121, 24);
             this.comboBoxSortBy.TabIndex = 2;
@@ -61,10 +61,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1040, 815);
             this.Controls.Add(this.comboBoxSortBy);
             this.Controls.Add(this.dataGridViewCustomers);
             this.Name = "ListCustomersScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListCustomersScreen";
             this.Load += new System.EventHandler(this.ListCustomersScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomers)).EndInit();
